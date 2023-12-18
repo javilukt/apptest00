@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo}"></title>
+</head>
+
+<body>
+    <h1>Menú para preguntar</h1>
+    <ul>
+        <li><a th:href="@{/test/pregunta-dummy}">Pregunta dummy</a></li>
+        <li><a th:href="@{/test/pregunta-tipo01-test}">Pregunta verdadero-falso de test</a></li>
+    </ul>
+    <p></p>
+    <a th:href="@{/}">Home</a>
+</body>
+
+</html>

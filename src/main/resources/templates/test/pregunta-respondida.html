@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo}"></title>
+</head>
+<body>
+    <h1>Pregunta dummy</h1>
+    <p>Esto es una pregunta dummy para hacer una primera prueba</p>
+    <form action="/rutaParaProcesarFormulario" method="post">
+        <ul>
+            <li>
+                <input type="radio" id="verdadero" name="respuesta" value="verdadero">
+                <label for="verdadero">Verdadero</label>
+            </li>
+            <li>
+                <input type="radio" id="falso" name="respuesta" value="falso">
+                <label for="falso">Falso</label>
+            </li>
+        </ul>
+        <input type="submit" value="Responder">
+    </form>
+    <p></p>
+    <a th:href="@{/test/menu}">Menú tests</a>
+
+</body>
+</html>
